@@ -1,7 +1,7 @@
 {
   "Employee": {
     "id": { "string": {} }
-    "name": { "string": {} }
+    
   }
 }
 
