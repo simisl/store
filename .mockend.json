@@ -4,7 +4,7 @@
     "name": {"string": {}},
     "designation": {"string": {}},
     "department": {"string": {}},
-    "dob": {"date": {}}
+    "dob": {"Date": {}}
   }
 }
 
