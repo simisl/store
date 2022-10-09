@@ -1,9 +1,9 @@
 {
   "Employee": {
     "empid": "string",
-    "name": "string"
-    "designation": "string"
-    "department": "string"
+    "name": "string",
+    "designation": "string",
+    "department": "string",
     "dob": "date"
   }
 }
