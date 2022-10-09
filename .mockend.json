@@ -1,6 +1,6 @@
 {
   "Employee": {
-    "id": {"string": {}},
+    "empid": {"string": {}},
     "name": {"string": {}},
     "designation": {"string": {}},
     "department": {"string": {}},
