@@ -1,8 +1,9 @@
 
 export interface Employee {
-  id: number;
+  id?:number,
+  empid: string;
   name: string;
-  dob: string;
+  dob: Date;
   designation: string;
   department: string;
 }

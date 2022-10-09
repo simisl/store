@@ -2,8 +2,8 @@
   <div class="formBlock">
     <h2>Employee Form</h2>
     <form [formGroup]="employeeForm" (ngSubmit)="employeeDetails(employeeForm.value)">
-      <input type="text" formControlName="id" placeholder="Employee Id">
-      <span *ngIf="employeeForm.get('id')?.errors?.['required'] && employeeForm.get('id')?.touched">
+      <input type="text" formControlName="empid" placeholder="Employee Id">
+      <span *ngIf="employeeForm.get('empid')?.errors?.['required'] && employeeForm.get('empid')?.touched">
           Id is required
       </span>
       <input type="text" formControlName="name" placeholder="Your Name">
@@ -24,10 +24,29 @@
     </span>
       <div>
         <button type="submit">Save</button>
-        <button type="button" class="cancel">Cancel</button>
+        <button type="button" class="cancel" (click)="cancel()">Cancel</button>
       </div>
 
     </form>
   </div>
 
 </div>
+<h1>Employees List</h1>
+<table>
+  <th>EMPID</th>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Designation</th>
+  <th>Department</th>
+  <th>Date of birth</th>
+  <th>Actions</th>
+  <tr *ngFor="let employee of emp">
+    <td>{{employee.empid}}</td>
+    <td>{{employee.id}}</td>
+    <td>{{employee.name}}</td>
+    <td>{{employee.designation}}</td>
+    <td>{{employee.department}}</td>
+    <td>{{employee.dob}}</td>
+    <td><button (click)="deleteEmployee(employee.id)" class="del">Delete</button></td>
+  </tr>
+</table>

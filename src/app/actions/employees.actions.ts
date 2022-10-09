@@ -9,3 +9,7 @@ export class RemoveEmployee {
     static readonly type = '[EMPLOYEE] Remove'
     constructor(public id: number) {}
 }
+export class displayEmployees {
+  static readonly type = '[EMPLOYEE] Get'
+
+}

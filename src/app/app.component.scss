@@ -5,7 +5,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height:100vh;
+  // height:100vh;
+  height:500px;
+}
+table{
+  width:100%;
+  border:1px solid black;
+  border-collapse: collapse;
+
+}
+th{
+  text-align: left;
+  border:1px solid black;
+  height:40px;
+  padding: 10px;
+
+}
+td{
+  border:1px solid black;
+  padding: 10px;
 }
 span{
   color: red;
@@ -13,9 +31,6 @@ span{
 form{
   display: flex;
   flex-direction: column;
-  // width:500px;
-  // border:1px solid black;
-  // padding: 20px;
 
 }
 input{
@@ -35,9 +50,13 @@ button{
   border:0;
   margin-right: 10px;
   margin-top: 15px;
+  cursor: pointer;
 }
 .cancel{
   background-color: white;
   color:black;
   border:1px solid black;
+}
+.del{
+  width:90%;
 }
