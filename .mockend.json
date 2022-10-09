@@ -1,8 +1,10 @@
 {
   "Employee": {
-   
-     "name": { "string": {} }
-    
+    "id": { "string": {} },
+    "name": { "string": {} },
+    "dob": { "string": {} },
+    "designation": { "string": {} },
+    "department": { "string": {} },
   }
 }
 
